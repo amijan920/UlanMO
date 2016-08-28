@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/toggle_demo"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:checkable="true"
+        android:title="@string/toggle_demo_on"/>
+    
+    <item
+        android:id="@+id/real_time"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:checkable="true"
+        android:checked="false"
+        android:title="@string/real_time"/>
+    
+
+</menu>
+<!-- From: file:/C:/Users/AmielRev/Documents/Android%20Studio/UlanMO_v01/app/src/main/res/menu/design.xml -->

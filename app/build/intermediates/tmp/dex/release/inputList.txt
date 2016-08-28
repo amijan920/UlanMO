@@ -1,0 +1,5 @@
+C:\Users\AmielRev\Documents\Android Studio\UlanMO_v01\app\build\intermediates\classes\release
+C:\Users\AmielRev\Documents\Android Studio\UlanMO_v01\app\build\intermediates\pre-dexed\release\support-annotations-21.0.0-3e81d4869d3051dcd485f93c8041c530f57a2e5f.jar
+C:\Users\AmielRev\Documents\Android Studio\UlanMO_v01\app\build\intermediates\pre-dexed\release\internal_impl-21.0.0-65b51a3a4403dd785d6d6b95eba4ef99d954b2e6.jar
+C:\Users\AmielRev\Documents\Android Studio\UlanMO_v01\app\build\intermediates\pre-dexed\release\classes-39905719126976b977e09c7d908b09fdad069340.jar
+C:\Users\AmielRev\Documents\Android Studio\UlanMO_v01\app\build\intermediates\pre-dexed\release\classes-af451fbe666be5377504eea5e79b0d86099bb3fa.jar

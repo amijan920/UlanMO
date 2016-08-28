@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+		<LinearLayout 
+		    android:id="@+id/book_marker"
+		    android:layout_width="20dp"
+        android:layout_height="fill_parent"
+        android:background="@color/alert_yellow"
+        android:orientation="horizontal">
+		    
+		</LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/fragment_vertical_padding"
+        android:paddingLeft="@dimen/fragment_horizontal_padding"
+        android:paddingRight="@dimen/fragment_horizontal_padding"
+        android:paddingTop="@dimen/fragment_vertical_padding" >
+
+        <ImageView
+            android:id="@+id/book_icon"
+            android:layout_width="@dimen/book_image_width"
+            android:layout_height="@dimen/book_image_width"
+            android:src="@drawable/g_srain04" />
+        
+        <ImageView
+            android:id="@+id/book_flood_icon"
+            android:layout_width="@dimen/book_image_width"
+            android:layout_height="@dimen/book_image_width"
+            android:layout_marginLeft="@dimen/fragment_horizontal_padding"
+            android:src="@drawable/g_sflood04" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical|left"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/book_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            		android:ellipsize="end"
+            		android:maxLines="1"
+                android:layout_marginBottom="@dimen/half_vertical"
+                android:paddingLeft="@dimen/fragment_horizontal_padding"
+                android:textColor="@color/dark_teal"
+                android:textSize="@dimen/large_text"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/book_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/fragment_horizontal_padding"
+                android:text="@string/loading"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/small_text" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

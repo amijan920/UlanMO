@@ -1,0 +1,4 @@
+[{ "lat":14.75202,"lng":121.07224, "name":"Home", "lastUpdate":"2014-08-15 16:40", "lastMeasure": [1.2, 3.4, 4.2] },
+{ "lat":14.70202,"lng":120.97224, "name":"Tambayan", "lastUpdate":"2014-08-15 16:40", "lastMeasure": [8, 3.4, 4.2] },
+{ "lat":14.6393852,"lng":121.07691720000003, "name":"Ateneo de Manila University", "lastUpdate":"2014-08-15 16:40", "lastMeasure": [8, 3.4, 4.2]},
+{ "lat":14.54002,"lng":120.98224, "name":"Mall of Asia", "lastUpdate":"2014-08-15 16:40", "lastMeasure": [8, 3.4, 4.2] }]

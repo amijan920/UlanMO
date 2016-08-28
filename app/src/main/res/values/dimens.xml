@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">0dp</dimen>
+    <dimen name="activity_vertical_margin">0dp</dimen>
+    <dimen name="label_width">80dp</dimen>
+    <dimen name="active_icon_width">190dp</dimen>
+    <dimen name="icon_width">110dp</dimen>
+    <dimen name="sub_icon_width">60dp</dimen>
+    <dimen name="medium_text">18dp</dimen>
+    <dimen name="search_text">20dp</dimen>
+    <dimen name="small_text">12dp</dimen>
+    <dimen name="fragment_horizontal_padding">10dp</dimen>
+    <dimen name="fragment_vertical_padding">10dp</dimen>
+    <dimen name="ui_gap">8dp</dimen>
+    <dimen name="ui_gap_half">4dp</dimen>
+    <dimen name="icon_gap">20dp</dimen>
+
+    <color name="dark_teal">#176678</color>
+    <color name="light_teal">#4AA6A6</color>
+    <color name="alert_yellow">#F8B81D</color>
+    <color name="alert_orange">#D56C27</color>
+    <color name="alert_red">#C8342C</color>
+    <color name="dark_gray">#444444</color>
+    <color name="white">#FFFFFF</color>
+    <dimen name="small_icon_width">110dp</dimen>
+    <dimen name="large_text">20dp</dimen>
+    <dimen name="half_vertical">5dp</dimen>
+    <dimen name="half_horizontal">6dp</dimen>
+    <dimen name="book_image_width">50dp</dimen>
+    <dimen name="large_icon_width">150dp</dimen>
+    <dimen name="book_padding">37dp</dimen>
+
+</resources>

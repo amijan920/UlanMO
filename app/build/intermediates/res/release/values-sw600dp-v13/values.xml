@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Users/AmielRev/Documents/Android%20Studio/UlanMO_v01/app/src/main/res/values-sw600dp/dimens.xml -->
+    <eat-comment/>
+    <dimen name="icon_width">140dp</dimen>
+    <dimen name="sub_icon_width">60dp</dimen>
+</resources>

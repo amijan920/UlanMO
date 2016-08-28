@@ -1,0 +1,381 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_alignParentEnd="false"
+    android:animateLayoutChanges="true"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical"
+        tools:context=".DisplayActivity" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_teal"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/fragment_vertical_padding"
+            android:paddingLeft="@dimen/fragment_horizontal_padding"
+            android:paddingRight="@dimen/fragment_horizontal_padding"
+            android:paddingTop="@dimen/fragment_vertical_padding"
+            tools:context=".DisplayActivity" >
+
+            <ImageView
+                android:id="@+id/search_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginRight="@dimen/ui_gap"
+                android:adjustViewBounds="true"
+                android:src="@android:drawable/ic_menu_search" />
+
+            <AutoCompleteTextView
+                android:id="@+id/barangay_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+        				android:singleLine="true"
+                android:background="@drawable/custom_edittext"
+                android:hint="@string/barangay_hint"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/white"
+                android:textColorHint="#DDDDDD"
+                android:textSize="@dimen/medium_text"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/light_teal"
+            android:paddingBottom="@dimen/fragment_vertical_padding"
+            android:paddingLeft="@dimen/fragment_horizontal_padding"
+            android:paddingRight="@dimen/fragment_horizontal_padding"
+            android:paddingTop="@dimen/fragment_vertical_padding"
+            tools:context=".DisplayActivity" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/current_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/fragment_vertical_padding"
+            android:paddingLeft="@dimen/fragment_horizontal_padding"
+            android:paddingRight="@dimen/fragment_horizontal_padding"
+            android:paddingTop="@dimen/fragment_vertical_padding" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/rainfall_image"
+                    android:layout_width="@dimen/icon_width"
+                    android:layout_height="@dimen/icon_width"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:src="@drawable/g_lrain01" />
+
+                <TextView
+                    android:id="@+id/rainfall"
+                    android:layout_width="@dimen/active_icon_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="@string/loading"
+                    android:textAlignment="center"
+                    android:textColor="@color/dark_teal"
+                    android:textSize="@dimen/medium_text"
+                    android:textStyle="bold" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/rainfall_text"
+                    android:layout_width="@dimen/active_icon_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:lines="4"
+                    android:maxLines="4"
+                    android:paddingLeft="@dimen/fragment_horizontal_padding"
+                    android:paddingRight="@dimen/fragment_horizontal_padding"
+                    android:text="Please wait a while."
+                    android:textAlignment="center"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/small_text" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/accumulation_image"
+                    android:layout_width="@dimen/icon_width"
+                    android:layout_height="@dimen/icon_width"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:src="@drawable/g_lrain01" />
+
+                <TextView
+                    android:id="@+id/accumulation"
+                    android:layout_width="@dimen/active_icon_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="@string/loading"
+                    android:textAlignment="center"
+                    android:textColor="@color/dark_teal"
+                    android:textSize="@dimen/medium_text"
+                    android:textStyle="bold" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/accumulation_text"
+                    android:layout_width="@dimen/active_icon_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:lines="4"
+                    android:maxLines="4"
+                    android:paddingLeft="@dimen/fragment_horizontal_padding"
+                    android:paddingRight="@dimen/fragment_horizontal_padding"
+                    android:text="Please wait a while"
+                    android:textAlignment="center"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/small_text" >
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/subgroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="@dimen/fragment_horizontal_padding"
+                android:layout_marginRight="@dimen/fragment_horizontal_padding"
+                android:background="#DDDDDD"
+                android:paddingBottom="@dimen/fragment_vertical_padding"
+                android:paddingLeft="@dimen/fragment_horizontal_padding"
+                android:paddingRight="@dimen/fragment_horizontal_padding"
+                android:paddingTop="@dimen/fragment_vertical_padding"
+                tools:context=".DisplayActivity" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/fragment_vertical_padding"
+                android:paddingLeft="@dimen/fragment_horizontal_padding"
+                android:paddingRight="@dimen/fragment_horizontal_padding"
+                android:paddingTop="@dimen/fragment_vertical_padding" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/subrainI1"
+                        android:layout_width="@dimen/sub_icon_width"
+                        android:layout_height="@dimen/sub_icon_width"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:src="@drawable/g_srain01" />
+
+                    <TextView
+                        android:id="@+id/subrain1"
+                        android:layout_width="@dimen/small_icon_width"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/past_5"
+                        android:textAlignment="center"
+                        android:textColor="@color/dark_teal"
+                        android:textSize="@dimen/small_text"
+                        android:textStyle="bold" >
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/subrainI2"
+                        android:layout_width="@dimen/sub_icon_width"
+                        android:layout_height="@dimen/sub_icon_width"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:src="@drawable/g_srain01" />
+
+                    <TextView
+                        android:id="@+id/subrain2"
+                        android:layout_width="@dimen/small_icon_width"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/past_day"
+                        android:textAlignment="center"
+                        android:textColor="@color/dark_teal"
+                        android:textSize="@dimen/small_text"
+                        android:textStyle="bold" >
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/subrainI3"
+                        android:layout_width="@dimen/sub_icon_width"
+                        android:layout_height="@dimen/sub_icon_width"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:src="@drawable/g_srain01" />
+
+                    <TextView
+                        android:id="@+id/subrain3"
+                        android:layout_width="@dimen/small_icon_width"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/past_hour"
+                        android:textAlignment="center"
+                        android:textColor="@color/dark_teal"
+                        android:textSize="@dimen/small_text"
+                        android:textStyle="bold" >
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/map_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#DDDDDD"
+            android:gravity="center"
+            android:padding="@dimen/half_horizontal"
+            android:text="View Map"
+            android:textAlignment="center"
+            android:textSize="@dimen/small_text" >
+        </TextView>
+
+        <RelativeLayout
+            android:id="@+id/bookmarks_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_teal"
+            android:paddingBottom="@dimen/fragment_vertical_padding"
+            android:paddingLeft="@dimen/fragment_horizontal_padding"
+            android:paddingRight="@dimen/fragment_horizontal_padding"
+            android:paddingTop="@dimen/fragment_vertical_padding"
+            tools:context=".DisplayActivity" >
+
+            <TextView
+                android:id="@+id/favorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Bookmarked Spots"
+                android:textColor="@color/white"
+                android:textSize="@dimen/medium_text"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/book_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Add"
+                android:textColor="@color/white"
+                android:textSize="@dimen/medium_text" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/light_teal"
+            android:paddingBottom="@dimen/fragment_vertical_padding"
+            android:paddingLeft="@dimen/fragment_horizontal_padding"
+            android:paddingRight="@dimen/fragment_horizontal_padding"
+            android:paddingTop="@dimen/fragment_vertical_padding"
+            tools:context=".DisplayActivity" >
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/bookmarks_list"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:paddingBottom="@dimen/book_padding" >
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/fragment_vertical_padding"
+            android:paddingLeft="@dimen/fragment_horizontal_padding"
+            android:paddingRight="@dimen/fragment_horizontal_padding"
+            android:paddingTop="@dimen/fragment_vertical_padding"
+            tools:context=".DisplayActivity" >
+
+            <TextView
+                android:id="@+id/test_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/dark_gray"
+        android:paddingBottom="@dimen/fragment_vertical_padding"
+        android:paddingLeft="@dimen/fragment_horizontal_padding"
+        android:paddingRight="@dimen/fragment_horizontal_padding"
+        android:paddingTop="@dimen/fragment_vertical_padding"
+        tools:context=".DisplayActivity" >
+
+        <TextView
+            android:id="@+id/last_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Click to refresh bookmarks"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_text" />
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/C:/Users/AmielRev/Documents/Android%20Studio/UlanMO_v01/app/src/main/res/layout/measurement_view.xml -->
